@@ -1,0 +1,141 @@
+:root {
+  /* Primario */
+
+  --Cian_oscuro: hsl(185, 75%, 39%);
+  --Azul_desaturado: hsl(229, 23%, 23%);
+  --Azul_grisaceo: hsl(227, 10%, 46%);
+
+  /* Neutral */
+
+  --Gris_oscuro: hsl(0, 0%, 59%);
+  --Gris_claro: hsl(0, 0%, 90%);
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--Cian_oscuro);
+  background-image: url(../images/bg-pattern-top.svg),
+    url(../images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 45vw bottom 50vh, left 50vw top 45vh;
+}
+
+/* Contenedor */
+.container {
+  margin: 1em auto;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Tarjeta */
+.card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card_imagen {
+  display: block;
+  width: 100%;
+}
+
+/* Perfil */
+.card_body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Imagen del perfil */
+.card_body img {
+  border: 5px solid white;
+  border-radius: 50%;
+  margin-top: calc(-48px - 5px);
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+/* Titulo */
+.card_body h1 {
+  font-size: 0.9em;
+  margin: 0;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--Azul_desaturado);
+}
+
+/* Palabra del titulo */
+.card_body h1 span {
+  font-weight: 400;
+  margin-left: 4px;
+  color: var(--Gris_oscuro);
+}
+
+/* Texto */
+.card_body p {
+  font-size: 0.7em;
+  margin: 0;
+  font-weight: 400;
+  margin-bottom: 25px;
+  color: var(--Gris_oscuro);
+}
+
+/* Linea */
+hr {
+  margin: 0;
+  height: 1px;
+  background-color: var(--Gris_claro);
+  border: 0;
+}
+
+/* Estadisticas */
+.card_estadisticas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  padding: 25px;
+}
+
+/* Titulos de estadistica */
+.card_estadisticas h2 {
+  font-size: 0.9em;
+  margin: 0;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: var(--Azul_desaturado);
+}
+
+/* Texto de estadistica */
+.card_estadisticas p {
+  font-size: 0.6em;
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: var(--Gris_oscuro);
+}
+
+/* Otro */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
